@@ -24,8 +24,10 @@ spec:
         stage('Build') {
             steps {
                 container('maven') {
+                    withCredentials([usernamePassword(credentialsId: 'nexus-admin-cred', passwordVariable: 'userPassword', usernameVariable: 'userName')]) {
                         sh "mvn -version"
-                        sh "mvn clean verify deploy -s settings.xml"
+                        sh "mvn -Duser=$userName -Dpassword=$userPassword clean verify deploy -s settings.xml"
+                    }
                 }
             }
         }

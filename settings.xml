@@ -121,8 +121,8 @@ under the License.
 		-->
 		<server>
 			<id>nexus-site</id>
-			<username>admin</username>
-			<password>5m7pd4mgnk</password>
+			<username>${user}</username>
+			<password>${password}</password>
 		</server>
 		<!-- Another sample, using keys to authenticate.
 		<server>
