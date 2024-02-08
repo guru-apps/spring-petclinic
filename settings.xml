@@ -165,7 +165,7 @@ under the License.
 			<name>CloudBees Guru mirror</name>
 			<url>https://nexus.stusatesttc080224.sa-demo.beescloud.com/repository/maven-public/</url>
 		</mirror>
-        -->
+        
 	</mirrors>
 
 	<!-- profiles
