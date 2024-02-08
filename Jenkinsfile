@@ -12,7 +12,7 @@ metadata:
 spec:
   containers:
   - name: maven
-    image: maven:alpine
+    image: maven:3-openjdk-17-slim
     command:
     - cat
     tty: true
@@ -25,7 +25,7 @@ spec:
             steps {
                 container('maven') {
                         sh "mvn -version"
-                        sh "mvn compile -s settings.xml"
+                        sh "mvn package -s settings.xml""
                 }
             }
         }
