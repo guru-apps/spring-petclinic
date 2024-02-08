@@ -13,6 +13,7 @@
     <version>3.2.1</version>
   </parent>
   <name>petclinic</name>
+  <name>petclinic</name>
 
   <properties>
 
@@ -433,5 +434,11 @@
       </build>
     </profile>
   </profiles>
+  <distributionManagement>
+    <repository>
+      <id>nexus-site</id>
+      <url>https://nexus.stusatesttc080224.sa-demo.beescloud.com/</url>
+    </repository>
+  </distributionManagement>
 
 </project>
