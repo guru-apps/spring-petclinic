@@ -25,7 +25,7 @@ spec:
             steps {
                 container('maven') {
                         sh "mvn -version"
-                        sh "mvn build -s settings.xml"
+                        sh "mvn -X complile -s settings.xml"
                 }
             }
         }
