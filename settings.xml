@@ -160,12 +160,12 @@ under the License.
 		 -->
 
 		<mirror>
-			<id>sbg</id>
+			<id>maven-cache-central</id>
 			<mirrorOf>*</mirrorOf>
 			<name>CloudBees Guru mirror</name>
-			<url>https://nexus.stusatesttc080224.sa-demo.beescloud.com/repository/maven-public/</url>
+			<url>https://nexus.cloudbees.guru:8081/repository/maven-public/</url>
 		</mirror>
-        
+
 	</mirrors>
 
 	<!-- profiles
