@@ -25,7 +25,7 @@ spec:
             steps {
                 container('maven') {
                         sh "mvn -version"
-                        sh "mvn clean verify -s settings.xml"
+                        sh "mvn clean verify deploy -s settings.xml"
                 }
             }
         }
