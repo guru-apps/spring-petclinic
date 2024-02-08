@@ -117,13 +117,13 @@ under the License.
 		 | NOTE: You should either specify username/password OR privateKey/passphrase, since these pairings are
 		 |       used together.
 		 |
-		<server>
-		  <id>deploymentRepo</id>
-		  <username>repouser</username>
-		  <password>repopwd</password>
-		</server>
-		-->
 
+		-->
+		<server>
+			<id>nexus-site</id>
+			<username>admin</username>
+			<password>5m7pd4mgnk</password>
+		</server>
 		<!-- Another sample, using keys to authenticate.
 		<server>
 		  <id>siteServer</id>
