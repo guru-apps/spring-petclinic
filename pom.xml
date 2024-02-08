@@ -13,7 +13,7 @@
     <version>3.2.1</version>
   </parent>
   <name>petclinic</name>
-  
+
 
   <properties>
 
@@ -437,7 +437,7 @@
   <distributionManagement>
     <repository>
       <id>nexus-site</id>
-      <url>https://nexus.stusatesttc080224.sa-demo.beescloud.com/</url>
+      <url>https://nexus.stusatesttc080224.sa-demo.beescloud.com/repository/maven-snapshots/</url>
     </repository>
   </distributionManagement>
 
