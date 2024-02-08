@@ -163,7 +163,7 @@ under the License.
 			<id>maven-cache-central</id>
 			<mirrorOf>*</mirrorOf>
 			<name>CloudBees Guru mirror</name>
-			<url>${env.NEXUSDNS}</url>
+			<url>${env.NEXUSDNS}/repository/maven-public/</url>
 			<!-- <url>https://nexus.stusatesttc080224.sa-demo.beescloud.com/repository/maven-public/</url> -->
 		</mirror>
 
