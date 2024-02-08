@@ -158,13 +158,14 @@ under the License.
 		  <url>http://my.repository.com/repo/path</url>
 		</mirror>
 		 -->
+		<!--
 		<mirror>
 			<id>maven-cache-central</id>
 			<mirrorOf>*</mirrorOf>
 			<name>CloudBees Guru mirror</name>
 			<url>https://nexus.stusatesttc080224.sa-demo.beescloud.com/repository/maven-public/</url>
 		</mirror>
-
+        -->
 	</mirrors>
 
 	<!-- profiles
