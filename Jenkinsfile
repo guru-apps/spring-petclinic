@@ -27,6 +27,7 @@ spec:
                     withCredentials([usernamePassword(credentialsId: 'nexus-admin-cred', passwordVariable: 'userPassword', usernameVariable: 'userName')]) {
                         sh "mvn -version"
                         sh "mvn -Duser=$userName -Dpassword=$userPassword -Dnexusdns=${env.NEXUSDNS} clean install deploy -Dmaven.test.skip=true -s settings.xml"
+                        sh "ls -lart target/spring-petclinic*/WEB-INF/classes/org/springframework/samples"
                     }
                 }
             }
