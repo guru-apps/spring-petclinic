@@ -35,7 +35,9 @@ import java.util.Locale;
 public class PetClinicApplication {
 
 	public static void main(String[] args) {
+		System.setProperty("server.servlet.context-path", "/petclinic");
 		SpringApplication.run(PetClinicApplication.class, args);
+
 	}
 
 }
