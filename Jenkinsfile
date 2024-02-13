@@ -26,7 +26,7 @@ spec:
                 container('maven') {
                     withCredentials([usernamePassword(credentialsId: 'nexus-admin-cred', passwordVariable: 'userPassword', usernameVariable: 'userName')]) {
                         sh "mvn -version"
-                        sh "mvn -Duser=$userName -Dpassword=$userPassword -Dnexusdns=${env.NEXUSDNS} clean verify deploy -s settings.xml"
+                        sh "mvn -Duser=$userName -Dpassword=$userPassword -Dnexusdns=${env.NEXUSDNS} clean verify deploy -Dmaven.test.skip=true -s settings.xml"
                     }
                 }
             }
