@@ -21,6 +21,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ImportRuntimeHints;
 import org.springframework.web.servlet.i18n.SessionLocaleResolver;
+import org.springframework.boot.web.servlet.support.SpringBootServletInitializer;
 
 import java.util.Locale;
 
@@ -32,7 +33,7 @@ import java.util.Locale;
  */
 @SpringBootApplication
 @ImportRuntimeHints(PetClinicRuntimeHints.class)
-public class PetClinicApplication {
+public class PetClinicApplication extends SpringBootServletInitializer {
 
 	public static void main(String[] args) {
 		System.setProperty("server.servlet.context-path", "/petclinic");
